@@ -1,0 +1,45 @@
+# Test 1 - Select the following lines and use ctrl+shift+k to uncomment.
+#x_0, y_0 = 0, 0
+#x_1, y_1 = 3, 4
+#x_2, y_2 = 1, 1
+
+
+# Test 2 - Select the following lines and use ctrl+shift+k to uncomment.
+x_0, y_0 = -2, 4
+x_1, y_1 = 1, 6
+x_2, y_2 = 2, 1
+
+
+# Test 3 - Select the following lines and use ctrl+shift+k to uncomment.
+#x_0, y_0 = 10, 0
+#x_1, y_1 = 0, 0
+#x_2, y_2 = 0, 10
+
+
+###################################################
+# Triangle area (Heron's) formula
+# Student should enter formulas on the next lines.
+
+def dist(arg1, arg2, arg3, arg4):
+  distance= ((arg1-arg2)**2 + (arg3-arg4)**2)**0.5
+  return distance
+
+a=dist(x_0, x_1, y_0, y_1)
+b=dist(x_1, x_2, y_1, y_2)
+c=dist(x_0, x_2, y_0, y_2)
+
+print(a)
+print(b)
+print(c)
+
+s= 0.5*(a+b+c)
+print(s)
+
+area = (s*(s-a)*(s-b)*(s-c))**0.5
+###################################################
+# Test output
+# Student should not change this code.
+
+print("A triangle with vertices (" + str(x_0) + "," + str(y_0) + ")," + 
+      "(" + str(x_1) + "," + str(y_1) + "), and" + 
+      "(" + str(x_2) + "," + str(y_2) + ") has an area of " + str(area) + ".")
