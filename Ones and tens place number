@@ -1,0 +1,18 @@
+def print_digits(num1):
+    tensplace= num1//10
+    ones_place= num1%10
+    
+    print("The tens placedigit is",str(tensplace))
+    print("The ones digit is", str(ones_place))
+    
+    return
+
+
+    
+###################################################
+# Tests
+# Student should not change this code.
+    
+print_digits(42)
+print_digits(99)
+print_digits(5)
