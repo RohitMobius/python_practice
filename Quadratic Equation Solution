@@ -1,0 +1,39 @@
+# Smaller quadratic root formula
+# Student should enter function on the next lines.
+def smaller_root (coeff_a,coeff_b,coeff_c):
+        D = (coeff_b**2)-4*coeff_a*coeff_c
+        if (D>0):
+            root_1 = (-(coeff_b) + (D)**0.5)/(2*coeff_a)
+            root_2 = (-(coeff_b) - (D)**0.5)/(2*coeff_a)
+            return ("Distinct roots are " + str(root_1) + ", " + str(root_2))
+        elif D==0:
+            root=   -(coeff_b)/(2*coeff_a) 
+            return ("Roots are common" + str(root))
+        else:
+            return print("Error: No real solutions")
+# return "Error: No real solutions" doesn't gives None is output as it is assumed to be a return type while print("Message") gives None as there is no return
+                
+        
+        
+
+
+
+###################################################
+# Tests
+# Student should not change this code.
+
+coeff_a, coeff_b, coeff_c = 1, 2, 3
+print("The smaller root of " + str(coeff_a) + "x^2 + " + str(coeff_b) + 
+      "x + " + str(coeff_c) + " is: ")
+print(str(smaller_root(coeff_a, coeff_b, coeff_c)))
+
+coeff_a, coeff_b, coeff_c = 2, 0, -10
+print("The smaller root of " + str(coeff_a) + "x^2 + " + str(coeff_b) + 
+      "x + " + str(coeff_c) + " is: ")
+print(str(smaller_root(coeff_a, coeff_b, coeff_c)))
+
+
+coeff_a, coeff_b, coeff_c = 6, -3, 5
+print("The smaller root of " + str(coeff_a) + "x^2 + " + str(coeff_b) + 
+      "x + " + str(coeff_c) + " is: ")
+print(str(smaller_root(coeff_a, coeff_b, coeff_c)))
